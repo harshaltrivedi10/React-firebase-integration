@@ -9,12 +9,12 @@ import UserProvider from './providers/userProvider';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 render(
-  <UserProvider>
-    <Router>
+  <Router>
+    <UserProvider>
       <PostsProvider>
         <Application />
       </PostsProvider>
-    </Router>
-  </UserProvider>,
+    </UserProvider>
+  </Router>,
   document.getElementById('root')
 );
